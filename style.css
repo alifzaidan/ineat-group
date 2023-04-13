@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy/Gilroy-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 1000px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav ul li a {
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* HOMEPAGE */
+.homepage {
+    background-color: #191c26;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1.8rem;
+}
+
+.judul-besar {
+    font-family: 'Gilroy';
+    font-size: 12vh;
+    letter-spacing: 0.5rem;
+}
+
+.deskripsi-judul {
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 50%;
+}
+
+.tombol-kontak {
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.tombol-kontak:hover {
+    cursor: pointer;
+}
+
+/* HIGHLIGHT CARD  */
+
+/* ABOUT US  */
+
+/* SERVICES  */
+
+/* TESTIMONIAL  */
+
+/* CONTACT US  */
+
+/* FOOTER  */
