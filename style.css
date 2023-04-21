@@ -21,12 +21,23 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 600;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     height: 1000px;
+}
+
+::selection {
+    background-color: #fe0988;
+    color: #16163c;
 }
 
 /* NAVBAR */
@@ -40,6 +51,14 @@ nav {
     position: fixed;
 }
 
+nav .logo {
+    transition: 0.5s;
+}
+
+nav .logo:hover {
+    transform: rotate(-3deg);
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -48,14 +67,79 @@ nav ul {
 
 nav ul li a {
     font-family: 'Poppins';
+    font-size: 0.9rem;
     text-decoration: none;
     color: #ffffff;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #fe0988;
+}
+
+.gradasi-horizontal {
+    background: linear-gradient(to right, #fe0988, #7237bd);
+    border: none;
+}
+
+.gradasi-horizontal:hover {
+    background: transparent;
+    box-shadow: 0 0 0 2px #ffffff;
 }
 
 /* HOMEPAGE */
 .homepage {
-    background-color: #191c26;
+    background-color: #111111;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.home-kiri {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sosial-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 7.5rem;
+}
+
+.sosial-media a {
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+.sosial-media a:hover {
+    scale: 1.5;
+}
+
+.panah-scroll {
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.8rem;
+    writing-mode: vertical-lr;
+    transition: 0.5s;
+    height: 15%;
+}
+
+.panah-scroll:hover {
+    gap: 1.5rem;
+}
+
+.panah-scroll p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+}
+
+.home-kanan {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,39 +148,110 @@ nav ul li a {
     gap: 1.8rem;
 }
 
-.judul-besar {
+.judul-besar span {
     font-family: 'Gilroy';
-    font-size: 12vh;
-    letter-spacing: 0.5rem;
+    font-size: 5.5rem;
+    margin: 5px;
+    cursor: default;
+}
+
+.judul-besar span:hover {
+    background: linear-gradient(to right, #fe0988, #7237bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .deskripsi-judul {
     font-family: 'Poppins';
     font-weight: 300;
     text-align: center;
+    font-size: 0.9rem;
+    width: 60%;
     line-height: 1.5rem;
-    width: 50%;
 }
 
 .tombol-kontak {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
     padding: 0.8rem 2.5rem;
     border-radius: 2rem;
-    background-color: transparent;
+    cursor: pointer;
     color: #ffffff;
-    border-color: #ffffff;
+    transition: 0.5s;
 }
 
-.tombol-kontak:hover {
-    cursor: pointer;
+.transparan {
+    background-color: #111111;
+    border: none;
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.transparan:hover {
+    background: linear-gradient(to right, #fe0988, #7237bd);
+    box-shadow: none;
 }
 
 /* HIGHLIGHT CARD  */
+.highlight-card {
+    height: 100vh;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card {
+    height: 27rem;
+    width: 22rem;
+    background-color: #16163c;
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to top right, #fe0988, #7237bd);
+    transition: 0.5s;
+}
+
+.card:nth-child(1):hover {
+    background: #fe0988;
+}
+
+.card:nth-child(2):hover {
+    background: linear-gradient(to right, #fe0988, #7237bd);
+}
+
+.card:nth-child(3):hover {
+    background: #7237bd;
+}
+
+.card h2 {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.card p {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
 
 /* ABOUT US  */
 
-/* SERVICES  */
+/* PRODUCT & SERVICES  */
 
 /* TESTIMONIAL  */
+
+/* TEAM */
 
 /* CONTACT US  */
 
