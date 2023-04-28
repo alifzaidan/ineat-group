@@ -125,6 +125,7 @@ a:hover {
     writing-mode: vertical-lr;
     transition: 0.5s;
     height: 15%;
+    text-decoration: none;
 }
 
 .panah-scroll:hover {
@@ -135,7 +136,6 @@ a:hover {
     font-family: 'Poppins';
     font-weight: 600;
     color: #ffffff;
-    text-decoration: none;
     letter-spacing: 0.05rem;
 }
 
@@ -246,8 +246,151 @@ a:hover {
 }
 
 /* ABOUT US  */
+.about-us {
+    height: 100vh;
+    background-color: #191c26;
+}
 
 /* PRODUCT & SERVICES  */
+.product-services {
+    height: 100vh;
+    background-color: #111111;
+    display: flex;
+}
+
+.container {
+    margin: 7rem 6rem 4rem 6rem;
+}
+
+.judul-halaman {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+hr {
+    width: 50px;
+}
+
+.product-services h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.judul-halaman2 {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 3.8rem;
+    padding: 1.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.judul-halaman2 span {
+    color: #fe0988;
+}
+
+.deskripsi-halaman {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    width: 60%;
+    line-height: 1.5rem;
+}
+
+.product-list {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.2rem;
+    height: 19rem;
+    width: 17rem;
+    background-color: #16163c;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.product-card:nth-child(1) {
+    border: 2px solid #fe0988;
+}
+.product-card:nth-child(2) {
+    border: 2px solid #ffffff;
+}
+.product-card:nth-child(3) {
+    border: 2px solid #7237bd;
+}
+
+.product-card:hover {
+    background: linear-gradient(to top right, #fe0988, #7237bd);
+    border-color: #111111;
+    transition: 0.5s;
+}
+
+.product-icon {
+    background-color: #ffffff;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    position: absolute;
+    top: -10%;
+    left: 37%;
+}
+
+.product-card h2 {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    width: 80%;
+}
+
+.product-card p {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    width: 70%;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+.lihat-selengkapnya {
+    background-color: rgba(39, 39, 76, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: 1rem;
+}
+
+.lihat-selengkapnya p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+}
 
 /* TESTIMONIAL  */
 
@@ -256,3 +399,5 @@ a:hover {
 /* CONTACT US  */
 
 /* FOOTER  */
+
+/* DETAIL PRODUCT & SERVICES */
