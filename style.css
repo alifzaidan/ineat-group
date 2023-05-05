@@ -242,7 +242,7 @@ nav ul {
 }
 
 .transparan {
-    background-color: #111111;
+    background-color: transparent;
     border: none;
     box-shadow: 0 0 0 2px #ffffff;
 }
@@ -464,13 +464,96 @@ hr {
     text-align: left;
 }
 
-/* TESTIMONIAL  */
+/* TESTIMONIALS  */
+.testimonials {
+    height: 100vh;
+    background-color: #191c26;
+    display: flex;
+}
 
 /* TEAM */
+.team {
+    height: 100vh;
+    background-color: #111111;
+    display: flex;
+}
 
 /* CONTACT US  */
+.contact-us {
+    height: 60vh;
+    background-color: #191c26;
+    display: flex;
+}
+
+.container-tengah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.tombol-enquiry {
+    margin-top: 1rem;
+}
 
 /* FOOTER  */
+footer {
+    height: 40vh;
+    background-color: #191c26;
+    border-top: 2px solid #ffffff;
+}
+
+.container-footer {
+    margin: 0;
+}
+
+.judul-halaman-footer {
+    font-size: 3rem;
+}
+
+.judul-halaman2-footer {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.deskripsi-footer {
+    font-size: 0.9rem;
+    width: 15rem;
+    padding: 0.5rem 0;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    font-weight: 300;
+}
+
+.footer-sosmed {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.footer-sosmed a {
+    transition: 0.5s;
+}
+
+.footer-sosmed a:hover {
+    scale: 1.5;
+}
 
 /* DETAIL PRODUCT & SERVICES */
 .product-detail {
