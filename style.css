@@ -49,6 +49,10 @@ nav {
     padding: 1.2rem 5rem;
     box-sizing: border-box;
     position: fixed;
+    background-color: rgba(17, 17, 17, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
+    z-index: 99;
 }
 
 nav .logo {
@@ -65,15 +69,21 @@ nav ul {
     gap: 2.5rem;
 }
 
-nav ul li a {
+.link-halaman {
     font-family: 'Poppins';
     font-size: 0.9rem;
     text-decoration: none;
     color: #ffffff;
+    padding-bottom: 0.5rem;
     transition: 0.5s;
 }
 
-a:hover {
+.link-halaman.active {
+    color: #fe0988;
+    border-bottom: 1px solid #fe0988;
+}
+
+.link-halaman:hover {
     color: #fe0988;
 }
 
@@ -162,6 +172,55 @@ a:hover {
     background-clip: text;
 }
 
+.judul-besar span:nth-child(1) {
+    animation: ubah-warna 1s ease-in-out;
+}
+
+.judul-besar span:nth-child(2) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.1s;
+}
+
+.judul-besar span:nth-child(3) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.judul-besar span:nth-child(4) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+.judul-besar span:nth-child(5) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.judul-besar span:nth-child(7) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.judul-besar span:nth-child(8) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.6s;
+}
+
+.judul-besar span:nth-child(9) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.7s;
+}
+
+.judul-besar span:nth-child(10) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.8s;
+}
+
+.judul-besar span:nth-child(11) {
+    animation: ubah-warna 1s ease-in-out;
+    animation-delay: 0.9s;
+}
+
 .deskripsi-judul {
     font-family: 'Poppins';
     font-weight: 300;
@@ -191,6 +250,19 @@ a:hover {
 .transparan:hover {
     background: linear-gradient(to right, #fe0988, #7237bd);
     box-shadow: none;
+}
+
+/* definisikan animasi keyframes */
+@keyframes ubah-warna {
+    0% {
+        color: white;
+    }
+    100% {
+        background: linear-gradient(to right, #fe0988, #7237bd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }
 
 /* HIGHLIGHT CARD  */
@@ -340,7 +412,7 @@ hr {
 .product-card:hover {
     background: linear-gradient(to top right, #fe0988, #7237bd);
     border-color: #111111;
-    transition: 0.5s;
+    width: 22rem;
 }
 
 .product-icon {
