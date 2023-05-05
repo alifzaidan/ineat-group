@@ -321,7 +321,63 @@ nav ul {
 .about-us {
     height: 100vh;
     background-color: #191c26;
+    display: flex;
 }
+
+.posisi {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+
+.left {
+    width: 50%;
+    height: 50%;
+    margin-top: 8%;
+
+}
+
+.right {
+    width: 50%;
+    height: 50%;
+
+}
+
+.container {
+    margin: 7rem 6rem 4rem 6rem;
+
+}
+
+.judul-halaman {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.about-us h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.teks {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+
+
 
 /* PRODUCT & SERVICES  */
 .product-services {
@@ -402,9 +458,11 @@ hr {
 .product-card:nth-child(1) {
     border: 2px solid #fe0988;
 }
+
 .product-card:nth-child(2) {
     border: 2px solid #ffffff;
 }
+
 .product-card:nth-child(3) {
     border: 2px solid #7237bd;
 }
@@ -471,13 +529,219 @@ hr {
     display: flex;
 }
 
+.container {
+    margin: 7rem 6rem 4rem 6rem;
+}
+
+.judul-halaman {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+hr {
+    width: 50px;
+}
+
+.testimonials h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.judul-halaman2 {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 3.8rem;
+    padding: 1.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.judul-halaman2 span {
+    color: #fe0988;
+}
+.deskripsi-halaman {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.testi{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tbox{
+    height: 22rem;
+    width: 35rem;
+    background: linear-gradient(to top right, #fe0988, #7237bd);
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+    display: grid;
+    grid-template-areas: "logo nama"
+                         "logo profesi"
+                         "ulasan ulasan"
+                         "rating rating";
+    grid-template-columns: .2fr 1fr;
+    grid-template-rows: .8fr 1fr 5fr 1fr;
+    gap: .5rem;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+.tbox p{
+    margin-top: 2rem;
+}
+.logo{
+    grid-area: logo;
+}
+.nama{
+    grid-area: nama;
+    align-self: end;
+    font-weight: 500;
+}
+.ulasan{
+    grid-area: ulasan;
+    line-height: 1.5rem;
+}
+.rating{
+    grid-area: rating;
+}
+
+
 /* TEAM */
-.team {
+.Team{
     height: 100vh;
     background-color: #111111;
     display: flex;
 }
 
+.container {
+    margin: 7rem 6rem 4rem 6rem;
+}
+
+.judul-halaman {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+hr {
+    width: 50px;
+}
+
+.Team h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.judul-halaman2 {
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 3.8rem;
+    padding: 1.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.judul-halaman2 span {
+    color: #fe0988;
+}
+.deskripsi-halaman {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    width: 70%;
+    line-height: 1.5rem;
+}
+
+.photoArea{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.kotak2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.2rem;
+    height: 19rem;
+    width: 15rem;
+    background-color: #16163c;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.kotak{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.2rem;
+    height: 19rem;
+    width: 15rem;
+    background: linear-gradient(to top right, #fe0988, #7237bd) ;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.kotak p{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Poppins';
+
+}
+.kotak2 p{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+.skala{
+    width: 7.5rem;
+}
+
+.kotak h1{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+    font-family: 'Gilroy';
+}
+.kotak2 h1{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+    font-family: 'Gilroy';
+}
 /* CONTACT US  */
 .contact-us {
     height: 60vh;
