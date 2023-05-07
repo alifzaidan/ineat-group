@@ -41,18 +41,21 @@ body {
 }
 
 /* NAVBAR */
-nav {
-    display: flex;
+header {
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     padding: 1.2rem 5rem;
     box-sizing: border-box;
-    position: fixed;
     background-color: rgba(17, 17, 17, 0.25);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.25);
     z-index: 99;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo {
@@ -67,6 +70,15 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
 }
 
 .link-halaman {
@@ -134,7 +146,7 @@ nav ul {
     gap: 0.8rem;
     writing-mode: vertical-lr;
     transition: 0.5s;
-    height: 15%;
+    height: 20%;
     text-decoration: none;
 }
 
@@ -154,7 +166,7 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     gap: 1.8rem;
 }
 
@@ -252,7 +264,6 @@ nav ul {
     box-shadow: none;
 }
 
-/* definisikan animasi keyframes */
 @keyframes ubah-warna {
     0% {
         color: white;
@@ -267,17 +278,19 @@ nav ul {
 
 /* HIGHLIGHT CARD  */
 .highlight-card {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #111111;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
     gap: 1.5rem;
 }
 
 .card {
     height: 27rem;
-    width: 22rem;
+    width: 26%;
     background-color: #16163c;
     border-radius: 1rem;
     padding: 4rem 3rem;
@@ -319,71 +332,26 @@ nav ul {
 
 /* ABOUT US  */
 .about-us {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #191c26;
     display: flex;
 }
 
-.posisi {
+.posisi-about-us {
     color: #ffffff;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-
+    gap: 5em;
+    margin-top: 5%;
 }
 
-
-.left {
+.about-us-kiri {
     width: 50%;
-    height: 50%;
-    margin-top: 8%;
-
 }
 
-.right {
+.about-us-kanan {
     width: 50%;
-    height: 50%;
-
-}
-
-.container {
-    margin: 7rem 6rem 4rem 6rem;
-
-}
-
-.judul-halaman {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-}
-
-.about-us h1 {
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 300;
-    flex-grow: 1;
-}
-
-.teks {
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 1rem;
-    width: 100%;
-    line-height: 1.5rem;
-}
-
-
-
-
-/* PRODUCT & SERVICES  */
-.product-services {
-    height: 100vh;
-    background-color: #111111;
-    display: flex;
 }
 
 .container {
@@ -398,11 +366,7 @@ nav ul {
     gap: 2rem;
 }
 
-hr {
-    width: 50px;
-}
-
-.judul-kecil {
+.judul-halaman h1 {
     color: #ffffff;
     font-family: 'Poppins';
     font-weight: 300;
@@ -419,6 +383,30 @@ hr {
 
 .judul-halaman2 span {
     color: #fe0988;
+}
+
+.deskripsi-halaman-full {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.about-us-kanan img {
+    width: 100%;
+}
+
+/* PRODUCT & SERVICES  */
+.product-services {
+    min-height: 100vh;
+    background-color: #111111;
+    display: flex;
+}
+
+hr {
+    width: 50px;
 }
 
 .deskripsi-halaman {
@@ -456,15 +444,15 @@ hr {
 }
 
 .product-card:nth-child(1) {
-    border: 2px solid #fe0988;
+    border: 1px solid #fe0988;
 }
 
 .product-card:nth-child(2) {
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .product-card:nth-child(3) {
-    border: 2px solid #7237bd;
+    border: 1px solid #7237bd;
 }
 
 .product-card:hover {
@@ -475,8 +463,8 @@ hr {
 
 .product-icon {
     background-color: #ffffff;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,53 +512,12 @@ hr {
 
 /* TESTIMONIALS  */
 .testimonials {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #191c26;
     display: flex;
 }
 
-.container {
-    margin: 7rem 6rem 4rem 6rem;
-}
-
-.judul-halaman {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-}
-hr {
-    width: 50px;
-}
-
-.testimonials h1 {
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 300;
-    flex-grow: 1;
-}
-
-.judul-halaman2 {
-    color: #ffffff;
-    font-family: 'Gilroy';
-    font-size: 3.8rem;
-    padding: 1.5rem 0;
-    letter-spacing: 0.1rem;
-}
-
-.judul-halaman2 span {
-    color: #fe0988;
-}
-.deskripsi-halaman {
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 1rem;
-    width: 100%;
-    line-height: 1.5rem;
-}
-
-.testi{
+.testi-list {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
@@ -578,75 +525,69 @@ hr {
     gap: 1.5rem;
 }
 
-.tbox{
+.tbox {
     height: 22rem;
-    width: 35rem;
+    width: 100%;
     background: linear-gradient(to top right, #fe0988, #7237bd);
+    border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem 2rem;
     box-sizing: border-box;
     color: #ffffff;
     transition: 0.5s;
     display: grid;
-    grid-template-areas: "logo nama"
-                         "logo profesi"
-                         "ulasan ulasan"
-                         "rating rating";
-    grid-template-columns: .2fr 1fr;
-    grid-template-rows: .8fr 1fr 5fr 1fr;
-    gap: .5rem;
+    grid-template-areas:
+        'logo nama'
+        'logo profesi'
+        'ulasan ulasan'
+        'rating rating';
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.8fr 1fr 5fr 1fr;
+    gap: 0.5rem;
     color: #ffffff;
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 1rem;
-
 }
-.tbox p{
+
+.tbox:hover {
+    background: none;
+    background-color: #16163c;
+    border: 1px solid #ffffff;
+}
+
+.tbox p {
     margin-top: 2rem;
 }
-.logo{
+
+.testi-logo {
     grid-area: logo;
 }
-.nama{
+
+.testi-nama {
     grid-area: nama;
     align-self: end;
-    font-weight: 500;
+    font-weight: 600;
 }
-.ulasan{
+
+.testi-pembeli {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.ulasan {
     grid-area: ulasan;
     line-height: 1.5rem;
 }
-.rating{
+.rating {
     grid-area: rating;
 }
 
-
 /* TEAM */
-.Team{
-    height: 100vh;
+.team {
+    min-height: 100vh;
     background-color: #111111;
     display: flex;
-}
-
-.container {
-    margin: 7rem 6rem 4rem 6rem;
-}
-
-.judul-halaman {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-}
-hr {
-    width: 50px;
-}
-
-.Team h1 {
-    color: #ffffff;
-    font-family: 'Poppins';
-    font-weight: 300;
-    flex-grow: 1;
 }
 
 .judul-halaman2 {
@@ -669,82 +610,113 @@ hr {
     line-height: 1.5rem;
 }
 
-.photoArea{
+.team-list {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
 }
-.kotak2{
+
+.team-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-top: 3.2rem;
     height: 19rem;
-    width: 15rem;
+    width: 20%;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.team-box:nth-child(odd) {
+    background: linear-gradient(to top right, #fe0988, #7237bd);
+}
+
+.team-box:nth-child(even) {
     background-color: #16163c;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    color: #ffffff;
-    transition: 0.5s;
-    position: relative;
-    text-decoration: none;
-    transition: 0.5s;
-
-}
-.kotak{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3.2rem;
-    height: 19rem;
-    width: 15rem;
-    background: linear-gradient(to top right, #fe0988, #7237bd) ;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    color: #ffffff;
-    transition: 0.5s;
-    position: relative;
-    text-decoration: none;
-    transition: 0.5s;
-
 }
 
-.kotak p{
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: 'Poppins';
+.team-box:hover {
+    padding-top: 1rem;
+}
 
+.team-box:nth-child(1):hover {
+    background-image: url('assets/img/photos/imam-big.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.kotak2 p{
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: 1rem;
-    font-family: 'Poppins';
+
+.team-box:nth-child(2):hover {
+    /* background-image: url('assets/img/photos/imam-big.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-.skala{
+
+.team-box:nth-child(3):hover {
+    background-image: url('assets/img/photos/enggar-big.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.team-box:nth-child(4):hover {
+    background-image: url('assets/img/photos/alif-big.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.team-box:nth-child(5):hover {
+    background-image: url('assets/img/photos/thoriq-big.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.team-box:hover .team-photo {
+    display: none;
+}
+
+.team-box:hover .team-name {
+    font-size: 1.2rem;
+}
+
+.team-box:hover .team-inisial {
+    font-size: 13rem;
+    opacity: 0.5;
+}
+
+.team-photo {
     width: 7.5rem;
 }
 
-.kotak h1{
+.team-name {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+
+.team-inisial {
     margin-top: 1rem;
     font-weight: 500;
     font-size: 3.5rem;
     font-family: 'Gilroy';
+    flex-grow: 1;
 }
-.kotak2 h1{
-    margin-top: 1rem;
-    font-weight: 500;
-    font-size: 3.5rem;
-    font-family: 'Gilroy';
-}
+
 /* CONTACT US  */
 .contact-us {
-    height: 60vh;
+    min-height: 60vh;
     background-color: #191c26;
     display: flex;
 }
@@ -764,7 +736,7 @@ hr {
 
 /* FOOTER  */
 footer {
-    height: 40vh;
+    min-height: 40vh;
     background-color: #191c26;
     border-top: 2px solid #ffffff;
 }
@@ -791,7 +763,7 @@ footer {
 .footer-group {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 2rem 4rem;
     gap: 10rem;
 }
 
@@ -964,4 +936,226 @@ footer {
     background: linear-gradient(to right, #fe0988, #7237bd);
     border-image: none;
     border-color: transparent;
+}
+
+/* kurang dari 1280px */
+@media screen and (max-width: 1280px) {
+    header {
+        padding: 1.2rem 3rem;
+    }
+
+    .home-kiri {
+        padding-left: 2rem;
+    }
+
+    .home-kanan {
+        margin-left: -2rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .posisi-about-us {
+        margin: 0;
+    }
+
+    .team-list {
+        gap: 1rem;
+    }
+
+    .footer-group {
+        gap: 5rem;
+    }
+
+    .product-detail-list {
+        width: 100%;
+    }
+}
+
+/* kurang dari 1024px */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .judul-besar span {
+        font-size: 5rem;
+    }
+
+    .card {
+        padding: 3rem 1rem;
+        width: 100%;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .container {
+        margin: 4rem;
+    }
+
+    .judul-halaman2 {
+        font-size: 3rem;
+    }
+
+    .deskripsi-halaman-full,
+    .deskripsi-halaman {
+        font-size: 0.9rem;
+    }
+
+    .deskripsi-halaman {
+        width: 100%;
+    }
+
+    .product-list {
+        gap: 1rem;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .team-box:nth-child(1) {
+        background-image: url('assets/img/photos/imam-big.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .team-box {
+        padding-top: 1rem;
+    }
+
+    .team-box:nth-child(2) {
+        /* background-image: url('assets/img/photos/imam-big.svg'); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .team-box:nth-child(3) {
+        background-image: url('assets/img/photos/enggar-big.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .team-box:nth-child(4) {
+        background-image: url('assets/img/photos/alif-big.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .team-box:nth-child(5) {
+        background-image: url('assets/img/photos/thoriq-big.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .team-photo {
+        display: none;
+    }
+
+    .team-name {
+        font-size: 1.2rem;
+    }
+
+    .team-inisial {
+        font-size: 13rem;
+        opacity: 0.5;
+    }
+
+    .container-footer {
+        margin: 0;
+    }
+
+    .judul-halaman-footer {
+        font-size: 2.5rem;
+    }
+
+    .judul-halaman2-footer {
+        font-size: 1.2rem;
+    }
+
+    .footer-group {
+        gap: 3rem;
+    }
+
+    .deskripsi-footer {
+        font-size: 0.8rem;
+        width: 13rem;
+        padding: 0.5rem 0;
+    }
+}
+
+/* kurang dari 814px */
+@media screen and (max-width: 814px) {
+    .highlight-card {
+        flex-direction: column;
+    }
+
+    .card {
+        height: fit-content;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .posisi-about-us {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .about-us-kiri {
+        width: 100%;
+    }
+
+    .product-list {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .product-card {
+        padding-top: 2rem;
+        height: 13rem;
+    }
+
+    .product-icon {
+        display: none;
+    }
+
+    .lihat-selengkapnya {
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .testi-list {
+        flex-direction: column;
+    }
+
+    .team-list {
+        flex-direction: column;
+    }
+
+    .team-box {
+        width: 100%;
+    }
+
+    .footer-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .judul-halaman2 {
+        padding: 1rem 0;
+    }
 }
