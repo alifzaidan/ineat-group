@@ -794,13 +794,17 @@ footer {
 
 /* DETAIL PRODUCT & SERVICES */
 .product-detail {
-    height: 100%;
+    min-height: 100%;
     background-color: #111111;
     display: flex;
 }
 
 .container-product {
     margin-top: 4rem;
+}
+
+.judul-kecil {
+    line-height: 1.5rem;
 }
 
 .judul-kecil a {
@@ -819,7 +823,8 @@ footer {
     width: 85%;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    text-align: center;
 }
 
 .product-detail-card {
@@ -838,7 +843,7 @@ footer {
 }
 
 .product-detail-card:hover {
-    width: 27rem;
+    width: 24rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -894,6 +899,7 @@ footer {
     font-family: 'Gilroy';
     letter-spacing: 0.03rem;
     text-align: center;
+    padding: 0 0.5rem;
 }
 
 .product-detail-desc {
@@ -1024,6 +1030,10 @@ footer {
     }
 
     .product-card {
+        width: 100%;
+    }
+
+    .product-card:hover {
         width: 100%;
     }
 
@@ -1201,12 +1211,16 @@ footer {
     }
 }
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 503px) {
     header {
         padding: 0.2rem 1rem;
     }
 
     nav .logo {
+        transform: scale(0.6);
+    }
+
+    nav .logo:hover {
         transform: scale(0.6);
     }
 
@@ -1242,6 +1256,10 @@ footer {
         gap: 1rem;
     }
 
+    .testi-pembeli h4 {
+        line-height: 1rem;
+    }
+
     .tbox {
         height: fit-content;
         padding: 1rem;
@@ -1251,5 +1269,31 @@ footer {
     .tbox p {
         margin-top: 1rem;
         font-size: 0.9rem;
+    }
+
+    .judul-halaman2-footer {
+        font-size: 1.5rem;
+    }
+
+    .judul-kecil span {
+        display: block;
+    }
+
+    .product-detail-list {
+        gap: 1rem;
+    }
+
+    .product-detail-card {
+        height: 15rem;
+        width: 47%;
+    }
+
+    .product-detail-card:hover {
+        width: 100%;
+    }
+
+    .product-detail-image {
+        height: 40%;
+        width: 100%;
     }
 }
