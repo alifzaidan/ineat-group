@@ -395,7 +395,7 @@ nav ul {
 }
 
 .about-us-kanan img {
-    width: 100%;
+    width: 80%;
 }
 
 /* PRODUCT & SERVICES  */
@@ -562,6 +562,7 @@ hr {
 
 .testi-logo {
     grid-area: logo;
+    align-self: center;
 }
 
 .testi-nama {
@@ -655,7 +656,7 @@ hr {
 }
 
 .team-box:nth-child(2):hover {
-    /* background-image: url('assets/img/photos/imam-big.svg'); */
+    background-image: url('assets/img/photos/nauzal-big.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -960,6 +961,10 @@ footer {
         margin: 0;
     }
 
+    .about-us-kanan img {
+        width: 100%;
+    }
+
     .team-list {
         gap: 1rem;
     }
@@ -1034,7 +1039,7 @@ footer {
     }
 
     .team-box:nth-child(2) {
-        /* background-image: url('assets/img/photos/imam-big.svg'); */
+        background-image: url('assets/img/photos/nauzal-big.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -1157,5 +1162,94 @@ footer {
 
     .judul-halaman2 {
         padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.8rem 2rem;
+    }
+
+    nav .logo {
+        transform: scale(0.8);
+    }
+
+    .judul-besar {
+        width: 80%;
+        text-align: center;
+    }
+
+    .highlight-card {
+        padding: 2rem;
+    }
+
+    .container {
+        margin: 2rem;
+    }
+
+    .container-footer {
+        width: 50%;
+    }
+
+    .deskripsi-halaman-full,
+    .deskripsi-halaman {
+        text-align: justify;
+    }
+
+    .footer-group {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    header {
+        padding: 0.2rem 1rem;
+    }
+
+    nav .logo {
+        transform: scale(0.6);
+    }
+
+    .judul-besar span {
+        font-size: 4rem;
+        margin: 2px;
+    }
+
+    .judul-halaman2 {
+        font-size: 2.5rem;
+    }
+
+    .deskripsi-halaman,
+    .deskripsi-halaman-full {
+        font-size: 0.8rem;
+    }
+
+    .home-kiri {
+        display: none;
+    }
+
+    .home-kanan {
+        margin: 0;
+    }
+
+    .product-card,
+    .tbox {
+        height: fit-content;
+        gap: 0.5rem;
+    }
+
+    .testi-list {
+        gap: 1rem;
+    }
+
+    .tbox {
+        height: fit-content;
+        padding: 1rem;
+        grid-template-rows: 0.8fr 1fr 4.5fr 1fr;
+    }
+
+    .tbox p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
     }
 }
