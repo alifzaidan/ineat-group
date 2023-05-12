@@ -14,3 +14,13 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+const header = document.querySelector('header');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    header.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
